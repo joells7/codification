@@ -1,50 +1,93 @@
 <!DOCTYPE html>
+
 <html>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-    <head>
-        <title>webside</title>
-        <body>
-            <h1 style="background-color:rgb(136, 129, 124);">Home</h1>
-            <p style="background-color:rgb(137, 116, 97);"> Manag your money in the safest way</p>
-          <h1 style="font-size:134%;">Youe Expenses</h1>
-          <table>
-            <tr>
-              <th>Company</th>
-              <th>Date</th> 
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>Amazon</td>
-              <td> 3/7/24 </td> 
-              <td>$15</td>
-            </tr>
-            <tr>
-              <td>Spotify</td>
-              <td> 2/8/24 </td> 
-              <td>$10.99</td>
-            </tr>
-            <tr>
-              <td>Apple</td>
-              <td> 5/22/24 </td> 
-              <td>$0.99</td>
-            </tr>
-            <tr>
-              <td>Netflix</td>
-              <td> 1/9/24 </td> 
-              <td>$9.99</td>
-            </tr>
-            <tr>
-              <td>Hulu</td>
-              <td> 9/10/24 </td> 
-              <td>$7.99</td>
-            </tr>
-            <tr>
-              <td>Disney+</td>
-              <td> 2/4/24 </td> 
-              <td>$8.99</td>
-            </tr>
-          </table>
-          
-        </body>
-    </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Expenses</title>  
+</head>
+
+<body>
+  <h1>My Economy</h1>
+  
+  <form> 
+    <div class="classform">
+      Transaction Type
+      <input id="Income" type="radio">
+      <label for="Income">Income</label>
+      <input id="egress" type="radio">
+      <label for="egress">Egress</label>
+    </div>
+    <div class="classform">
+      <label for=transactionDescription>Description</label>
+      <input id="transactionDescription" name="transactionDescription">
+    </div>
+    <div class="classform">
+      <label for="transactionAmount">Amount </label>
+      <input id="transactionAmount" name="transactionAmount" type="number">
+    </div>
+    <div class="classform">
+      <label for="transactionCategory">Category</label>
+       <input id="transactionCategory" name="transactionCategory">
+    </div>
+    <div class="classform">
+      <button>Add</button>
+    </div>
+  </form>
+  <div class="tabletformat">
+      <table>
+         <tr>
+            <th>
+              Type
+            </th>
+             <th>
+              Description
+            </th>
+            <th>
+              Amount
+            </th>
+            <th>
+              Category
+            </th>
+          </tr>
+           <tr>
+             <td>Income</td>
+             <td>Salary</td>
+             <td>1500</td>
+             <td>Work</td>
+           </tr>
+           <tr>
+              <td>Egress</td>
+              <td>Rent</td>
+              <td>4000</td>
+              <td>House</td>
+           </tr>
+    </table>
+  </div>
+  
+  <style>
+    td{
+      text-align: center;
+      padding: 9px;
+      border: solid #17202A 1px;
+      }
+      th{
+      text-align: center;
+      padding: 9px;
+      border: solid #17202A 1px;
+      }
+      .tabletformat table {
+      margin: 10px auto;
+      }
+      h1 {
+      text-align:center;
+      }
+    .classform{
+      background-color:#B2BABB;
+      padding-bottom: 20px;
+    }
+  </style>
+        
+</body>
+  
 </html>
