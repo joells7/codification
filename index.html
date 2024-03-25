@@ -1,50 +1,91 @@
 <!DOCTYPE html>
+
 <html>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-    <head>
-        <title>webside</title>
-        <body>
-            <h1 style="background-color:rgb(136, 129, 124);">Home</h1>
-            <p style="background-color:rgb(137, 116, 97);"> Manag your money in the safest way</p>
-          <h1 style="font-size:134%;">Youe Expenses</h1>
-          <table>
-            <tr>
-              <th>Company</th>
-              <th>Date</th> 
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>Amazon</td>
-              <td> 3/7/24 </td> 
-              <td>$15</td>
-            </tr>
-            <tr>
-              <td>Spotify</td>
-              <td> 2/8/24 </td> 
-              <td>$10.99</td>
-            </tr>
-            <tr>
-              <td>Apple</td>
-              <td> 5/22/24 </td> 
-              <td>$0.99</td>
-            </tr>
-            <tr>
-              <td>Netflix</td>
-              <td> 1/9/24 </td> 
-              <td>$9.99</td>
-            </tr>
-            <tr>
-              <td>Hulu</td>
-              <td> 9/10/24 </td> 
-              <td>$7.99</td>
-            </tr>
-            <tr>
-              <td>Disney+</td>
-              <td> 2/4/24 </td> 
-              <td>$8.99</td>
-            </tr>
-          </table>
-          
-        </body>
-    </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Expenses</title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    
+  
+  <h1>My Economy</h1>
+    <nav>
+      <ul>
+        <li> <a href="Home">Home</a> </li>
+      <li> <a href="Login">Login</a> </li>
+      </ul>
+    </nav>
+  </header> 
+  <main>
+  <img src="cashicon.png" alt="Trulli" width="150" height="150" style="float: right; margin-right: 20px;">
+
+  
+  <form id="transactionForm">
+    <div class="formField">
+      Transaction Type
+      <input id="Income" type="radio" name="transactionType" value="Inc">
+      <label for="Income">Income</label>
+      <input id="egress" type="radio" name="transactionType" value="Egre">
+      <label for="egress">Egress</label>
+    </div>
+    <div class="formField">
+      <label for=transactionDescription>Description</label>
+      <input id="transactionDescription" name="transactionDescription">
+    </div>
+    <div class="formField">
+      <label for="transactionAmount">Amount </label>
+      <input id="transactionAmount" name="transactionAmount" type="number">
+    </div>
+    <div class="formField">
+      <label for="transactionCategory">Category</label>
+       <input id="transactionCategory" name="transactionCategory">
+    </div>
+    <div class="formField">
+      <button id="submit">Add</button>
+    </div>
+  </form>
+  <div class="tabletformat">
+      <table id="transactionTable">
+         <tr>
+            <th>
+              Type
+            </th>
+             <th>
+              Description
+            </th>
+            <th>
+              Amount
+            </th>
+            <th>
+              Category
+            </th>
+          </tr>
+           <tr>
+             <td>Income</td>
+             <td>Salary</td>
+             <td>1500</td>
+             <td>Work</td>
+           </tr>
+           <tr>
+              <td>Egress</td>
+              <td>Rent</td>
+              <td>4000</td>
+              <td>House</td>
+           </tr>
+    </table>
+    
+  </div>
+  <script src="script.js">
+  
+  </main>
+<footer>
+  <p>Copyright &copy; 2023 My Economy </p>
+  </footer>  
+        
+</body>
+  
 </html>
