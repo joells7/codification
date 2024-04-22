@@ -11,90 +11,80 @@
 
 <body>
   <header>
-    
-  
-  <h1>My Economy</h1>
+    <h1>My Economy</h1>
     <nav>
       <ul>
-        <li> <a href="Home">Home</a> </li>
-      <li> <a href="Login">Login</a> </li>
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="Login">Login</a> </li>
+        <li> <a href="Register.html">Register</a> </li>
       </ul>
     </nav>
-  </header> 
-  
+  </header>
+
   <main>
-  <img src="cashicon.png" alt="Trulli" width="150" height="150" style="float: right; margin-right: 20px;">
+    <img src="cashicon.png" alt="Trulli" width="150" height="150" style="float: right; margin-right: 20px;">
 
-
-</head>
-
-<body>
-  <h1>My Economy</h1>
-
-  
-  <form id="transactionForm">
-    <div class="formField">
-      Transaction Type
-      <input id="Income" type="radio" name="transactionType" value="Inc">
-      <label for="Income">Income</label>
-      <input id="egress" type="radio" name="transactionType" value="Egre">
-      <label for="egress">Egress</label>
-    </div>
-    <div class="formField">
-      <label for=transactionDescription>Description</label>
-      <input id="transactionDescription" name="transactionDescription">
-    </div>
-    <div class="formField">
-      <label for="transactionAmount">Amount </label>
-      <input id="transactionAmount" name="transactionAmount" type="number">
-    </div>
-    <div class="formField">
-      <label for="transactionCategory">Category</label>
-       <input id="transactionCategory" name="transactionCategory">
-    </div>
-    <div class="formField">
-      <button id="submit">Add</button>
-    </div>
-  </form>
-  <div class="tabletformat">
+    <form id="transactionForm">
+      <div class="formField">
+        Transaction Type
+        <input id="Income" type="radio" name="transactionType" value="Inc">
+        <label for="Income">Income</label>
+        <input id="egress" type="radio" name="transactionType" value="Egre">
+        <label for="egress">Egress</label>
+      </div>
+      <div class="formField">
+        <label for="transactionDescription">Description</label>
+        <input id="transactionDescription" name="transactionDescription">
+      </div>
+      <div class="formField">
+        <label for="transactionAmount">Amount </label>
+        <input id="transactionAmount" name="transactionAmount" type="number">
+      </div>
+      <div class="formField">
+        <label for="transactionCategory">Category</label>
+        <input id="transactionCategory" name="transactionCategory">
+      </div>
+      <div class="formField">
+        <button id="submit">Add</button>
+      </div>
+    </form>
+    <div class="tabletformat">
       <table id="transactionTable">
-         <tr>
-            <th>
-              Type
-            </th>
-             <th>
-              Description
-            </th>
-            <th>
-              Amount
-            </th>
-            <th>
-              Category
-            </th>
-          </tr>
-           <tr>
-             <td>Income</td>
-             <td>Salary</td>
-             <td>1500</td>
-             <td>Work</td>
-           </tr>
-           <tr>
-              <td>Egress</td>
-              <td>Rent</td>
-              <td>4000</td>
-              <td>House</td>
-           </tr>
-    </table>
-    
-  </div>
+        <tr>
+          <th>
+            Type
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Amount
+          </th>
+          <th>
+            Category
+          </th>
+        </tr>
+        <tr>
+          <td>Income</td>
+          <td>Salary</td>
+          <td>1500</td>
+          <td>Work</td>
+        </tr>
+        <tr>
+          <td>Egress</td>
+          <td>Rent</td>
+          <td>4000</td>
+          <td>House</td>
+        </tr>
+      </table>
+    </div>
 
-  <script src="script.js">
-  
+    <script src="script.js"></script>
   </main>
-<footer>
-  <p>Copyright &copy; 2023 My Economy </p>
-  </footer>  
-        
+
+  <footer>
+    <p>Copyright &copy; 2023 My Economy </p>
+  </footer>
 </body>
-  
+
 </html>
